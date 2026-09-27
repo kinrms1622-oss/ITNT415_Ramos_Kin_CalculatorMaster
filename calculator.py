@@ -7,17 +7,18 @@ def display_menu():
     print("5. Exit")
 
 def add(a, b):
-    pass
+    return round(a + b, 2)
 
 def subtract(a, b):
-    pass
+    return round(a - b, 2)
 
 def multiply(a, b):
-    pass
+    return round(a * b, 2)
 
 def divide(a, b):
-    pass
-
+    if b == 0:
+        return "Error: Division by zero is not allowed."
+    return round(a / b, 2)
 def get_numbers():
     while True:
         try:
